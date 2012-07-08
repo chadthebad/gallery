@@ -1,3 +1,3 @@
 class Photo < ActiveRecord::Base
-  attr_accessible :title
+  attr_accessible :title, :image
 end
