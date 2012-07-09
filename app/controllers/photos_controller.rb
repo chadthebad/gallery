@@ -1,4 +1,8 @@
 class PhotosController < ApplicationController
+
+  belongs_to :user
+  # belongs_to :albums
+
   def index
     @photos = Photo.all
   end
