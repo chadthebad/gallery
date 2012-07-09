@@ -1,15 +1,18 @@
-<h1>Listing photos</h1>
+<h1>Photos</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th></th>
-    <th></th>
+    <th>Thumbnail</th>
+    <th width=100>Title</th>
+    <th>Actions</th>
     <th></th>
   </tr>
 
 <% @photos.each do |photo| %>
   <tr>
+    <td>
+      <img src="/uploads/<%= photo.id %>.jpg" width=50>
+    </td>
     <td><%= photo.title %></td>
     <td><%= link_to 'Show', photo %></td>
     <td><%= link_to 'Edit', edit_photo_path(photo) %></td>

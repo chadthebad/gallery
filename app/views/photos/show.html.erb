@@ -4,6 +4,7 @@
   <b>Title:</b>
   <%= @photo.title %>
 </p>
+<img src="/uploads/<%= @photo.id %>.jpg">
 
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |

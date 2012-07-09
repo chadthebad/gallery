@@ -1,4 +1,8 @@
 Gallery::Application.routes.draw do
+  resources :users
+
+  resources :albums
+
   resources :photos
 
   # The priority is based upon order of creation:
