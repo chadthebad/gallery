@@ -1,8 +1,5 @@
 class AlbumsController < ApplicationController
 
-  belongs_to :user
-  has_many :photos
-
   def index
     @albums = Album.all
     index.html.erb

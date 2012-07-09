@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
 
-  has_many :albums
-  has_many :photos
-
   def index
     @users = User.all
   end
